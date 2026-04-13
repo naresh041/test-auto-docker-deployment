@@ -24,7 +24,7 @@ pipeline {
                 sh '''
                 docker stop hello-container || true
                 docker rm hello-container || true
-                docker run -d -p 3000:3000 --name hello-container $IMAGE_NAME
+                docker run -d -p 3001:3000 --name hello-container $IMAGE_NAME
                 '''
             }
         }
